@@ -1,0 +1,10 @@
+BACKUP ~weidu_external/backup/iwgee-broken-bonecir~
+AUTHOR ~http://github.com/mleduque/ie-fixes~
+
+VERSION ~1~
+
+BEGIN ~Remove invalid #BONECIR.SPL from chitin.key~
+DESIGNATED 1
+REQUIRE_PREDICATE GAME_IS ~iwdee~ ~Only available for iwdee~
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME "#BONECIR.SPL" ~Only useful is #BONECIR.SPL exists~
+    DISABLE_FROM_KEY "#BONECIR.SPL"
